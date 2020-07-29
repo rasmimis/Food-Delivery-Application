@@ -1,0 +1,1 @@
+insert into ORDER_ENTITY values(1, 100, 'Fish', 1001, true,'SM');
