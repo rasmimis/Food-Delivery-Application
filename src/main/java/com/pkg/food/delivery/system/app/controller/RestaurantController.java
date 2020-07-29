@@ -1,4 +1,4 @@
-package com.pkg.food.delivery.system.app;
+package com.pkg.food.delivery.system.app.controller;
 
 import java.net.URI;
 import java.util.List;
@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.pkg.food.delivery.system.app.model.RestaurantEntity;
+import com.pkg.food.delivery.system.app.repository.RestaurantRepository;
 
 @RestController
 @RequestMapping("/restaurant")

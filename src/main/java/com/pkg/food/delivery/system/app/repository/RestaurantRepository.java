@@ -1,4 +1,4 @@
-package com.pkg.food.delivery.system.app;
+package com.pkg.food.delivery.system.app.repository;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.pkg.food.delivery.system.app;
+package com.pkg.food.delivery.system.app.controller;
 
 import java.net.URI;
 import java.util.List;
@@ -15,6 +15,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.pkg.food.delivery.system.app.exception.FoodItemNotFoundException;
 import com.pkg.food.delivery.system.app.model.FoodEntity;
+import com.pkg.food.delivery.system.app.repository.FoodDeliveryRepository;
 
 @RestController
 @RequestMapping("/food")
