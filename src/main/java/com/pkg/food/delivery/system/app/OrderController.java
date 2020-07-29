@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.pkg.food.delivery.system.app.exception.FoodItemNotFoundException;
+import com.pkg.food.delivery.system.app.exception.OrderDetailsNotFoundException;
 import com.pkg.food.delivery.system.app.model.OrderEntity;
 
 @RestController
@@ -35,7 +35,7 @@ public class OrderController {
 	public OrderEntity getOrderById(@PathVariable int orderId) {
 		OrderEntity orderItem = orderRepository.findOne(orderId);
 		if (orderItem == null)
-			throw new FoodItemNotFoundException("Order doesnot exist with this order id " + orderId);
+			throw new OrderDetailsNotFoundException("Order doesnot exist with this order id " + orderId);
 		return orderItem;
 
 	}
